@@ -1,0 +1,8 @@
+### cancel job
+POST http://{{agent_server_uri}}/api/v1/ems/job/cancel
+content-type: application/json
+
+{
+  "user_id": "admin",
+  "job_id": "ceecd670-e056-4ab4-b1db-f9c5fedf1084"
+}

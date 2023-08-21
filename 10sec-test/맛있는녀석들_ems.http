@@ -1,0 +1,24 @@
+@hostname = ces-skbroadband-agent-stage.com
+POST https://{{hostname}}/api/v1/ems/job/create
+content-type: application/json
+
+{
+  "ems_user_id": "test",
+  "series_id": "CS00002",
+  "episode_id": "CE00002",
+  "content_name": "맛있는녀석들_422_8bit_10s",
+  "origin_file_name": "맛있는녀석들_422_8bit_10s",
+  "request_time": "20220602192000",
+  "input_file_duration_time": "00:00:10",
+  "genre": "TEST",
+  "resolution": "FHD",
+  "input_file_key": "10sec/맛있는녀석들_422_8bit_10s.mxf",
+  "encoding_profiles": {
+    "00002-237658965-38746287659265923-36874682": [
+      {
+        "video_profile": "TV-HD-H264-TS",
+        "audio_profile": "MO-MC-1TK-AAC-2CH"
+      }
+    ]
+  }
+}

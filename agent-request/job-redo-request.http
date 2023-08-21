@@ -1,0 +1,8 @@
+### redo job
+POST {{agent_server_uri}}/api/v1/encoder/job/redo
+content-type: application/json
+
+{
+  "user_id": "admin",
+  "job_id": "28226818-fa8c-4312-99e8-0c75210811d1"
+}

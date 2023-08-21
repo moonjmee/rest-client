@@ -1,0 +1,39 @@
+### query job status
+POST {{agent_server_uri}}/api/v1/encoder/job/get
+content-type: application/json
+Authorization: {{authorization}}
+
+{
+  "user_id": "admin",
+  "current_page": 0,
+  "rows_per_page": 10,
+  "content_name": "너의",
+  "episode_id": "CE0003",
+  "job_status": [
+    "PROCESSING"
+  ]
+}
+
+### query job status
+POST {{agent_server_uri}}/api/v1/encoder/job/get
+content-type: application/json
+Authorization: {{authorization}}
+
+{
+  "user_id": "admin",
+  "job_ids": [ "d3f8252d-63f5-454c-ae86-bcedd81a86e3" ]
+}
+
+### query default job status
+POST {{agent_server_uri}}/api/v1/encoder/job/get
+content-type: application/json
+Authorization: {{authorization}}
+
+{
+  "user_id": "test",
+  "current_page": 0,
+  "rows_per_page": 10,
+  "job_status": [
+    "PROCESSING"
+  ]
+}

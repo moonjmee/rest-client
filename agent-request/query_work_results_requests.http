@@ -1,0 +1,7 @@
+### query job status
+POST http://{{agent_server_uri}}/api/v1/encoder/job/get
+content-type: application/json
+
+{
+  "job_id": ["e0fe5b93-8352-4346-bfed-a0d885d62354"]
+}

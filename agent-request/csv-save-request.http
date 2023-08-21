@@ -1,0 +1,11 @@
+### query job status
+POST {{agent_server_uri}}/api/v1/misc/report/raw/save
+content-type: application/json
+
+{
+  "user_id": "admin",
+  "from_date": 1690642800000,
+  "to_date": 1690801200000,
+  "status": "SUCCESS",
+  "video_profile": ""
+}

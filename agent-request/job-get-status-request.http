@@ -1,0 +1,8 @@
+### query job status
+POST {{agent_server_uri}}/api/v1/ems/job/get
+content-type: application/json
+
+{
+  "user_id": "admin",
+  "job_ids": ["f33dc370-083a-4880-8677-0692fdf917b3"]
+}

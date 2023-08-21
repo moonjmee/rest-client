@@ -1,0 +1,44 @@
+### ems_1
+@agent_server_uri = https://ces-skbroadband-agent-stage.com
+
+POST {{agent_server_uri}}/api/v1/ems/job/create
+content-type: application/json
+
+{
+  "ems_user_id": "bmt-test",
+  "series_id": "CS10009",
+  "episode_id": "CE10009",
+  "content_name": "TC-CES-009_명을-사수하는-사람들-명사수-23-08-16-수_1min",
+  "origin_file_name": "TC-CES-009_명을-사수하는-사람들-명사수-23-08-16-수_1min.m2t",
+  "request_time": "20220602192000",
+  "input_file_duration_time": "00:00:10",
+  "genre": "NONE",
+  "resolution": "FHD",
+  "input_file_key": "bmt-test/TC-CES-009_명을-사수하는-사람들-명사수-23-08-16-수_1min.m2t",
+  "encoding_profiles": {
+    "4FE70810-C6BE-4E5B-9E5C-41936D91D9F0": [
+      {
+        "video_profile": "TV-HD-H264-TS",
+        "audio_profile": "TV-MC-1TK-AAC-2CH"
+      }
+    ],
+    "CE10009": [
+      {
+        "video_profile": "MO-FHD-H264-MP4",
+        "audio_profile": "MO-MC-1TK-AAC-2CH"
+      },
+      {
+        "video_profile": "MO-HD-H264-MP4",
+        "audio_profile": "MO-MC-1TK-AAC-2CH"
+      },
+      {
+        "video_profile": "MO-SD-H264-MP4",
+        "audio_profile": "MO-MC-1TK-AAC-2CH"
+      },
+      {
+        "video_profile": "MO-LD-H264-MP4",
+        "audio_profile": "MO-MC-1TK-AAC-2CH"
+      }
+    ]
+  }
+}
